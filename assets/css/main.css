@@ -3686,4 +3686,34 @@ input, select, textarea {
 				transform: none;
 			}
 
-	}
+	}/* ========================================= */
+/* DELHI EXPERIENCE – NEW STYLES */
+/* ========================================= */
+.delhi-experience {
+    position: relative;
+    padding: 80px 40px;
+    color: white;
+    background-image: url("images/peanut_butter.jpg"), url("images/peanut_butter2.jpg");
+    background-position: left center, right center;
+    background-size: 50% 100%, 50% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Gradient overlay */
+.delhi-experience::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(247, 143, 83, 0.675),
+        rgba(233, 191, 181, 0.296)
+    );
+    z-index: 1;
+}
+
+.delhi-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
